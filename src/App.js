@@ -23,7 +23,7 @@ class App extends React.Component {
 
     // for selecting the toDo
 
-    toggleTodo = toId => {
+    toggleTodo = todoId => {
       this.setState({
         toDoArray: this.state.toDoArray.map(toDo => {
           if (toDo.id === todoId) {
@@ -53,6 +53,7 @@ class App extends React.Component {
     };
 
 // clear Todo 
+
 clearTodo = () => {
   this.setState({
     toDoArray: this.state.toDoArray.filter(toDo => {
